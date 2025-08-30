@@ -8,5 +8,11 @@ namespace SelfAspNet.Controllers
         {
             return Content("Hello World!");
         }
+
+        public IActionResult Show()
+        {
+            ViewBag.Message = "Hello World!";
+            return View();
+        }
     }
 }
